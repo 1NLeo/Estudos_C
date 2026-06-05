@@ -36,5 +36,9 @@ int main() {
 
     printf( "%s foi o melhor aluno, e sua nota foi: %f.:2f\n", maior_aluno, maior_nota );
 
+    printf ("%d", 1);
+
     return 0;
+
+    
 }
