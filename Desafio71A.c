@@ -10,7 +10,7 @@ int main () {
     scanf ("%d", &rep);
 
     for (int i = 0; i < rep; i++ ) {
-        scanf ("%s", word);
+        scanf ("%s", &word);
 
         length = strlen (word);
         
