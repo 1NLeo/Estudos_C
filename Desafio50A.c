@@ -12,6 +12,5 @@ s = (m * n) / 2;
 
 printf ("%d", s);
 
-
 return 0;
 }
