@@ -11,8 +11,8 @@ int main () {
 
     while (a <= b) {
 
-          a = a * 3;
-          b = b * 2;
+           a *= 3;
+          b *= b * 2;
 
             year++;
            
