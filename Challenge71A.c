@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-//way to long words
+//way too long words
 int main () {
 
     char word [100];
