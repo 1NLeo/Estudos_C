@@ -2,9 +2,10 @@
 
     int main () {
 
-    int cost = 0, dol = 0, ban = 0;
+    int cost = 0, dol = 0, ban = 0, cont = 0, add = 0;
 
     scanf ("%d", &ban);
+    ban++;
     int vet[ban];
 
     scanf ("%d", &dol);
@@ -15,12 +16,20 @@
 
         for (int i = 1; i < ban; i++) {
 
-            vet[i] = cost * i;
+            vet[cont] = cost * i;
+
+            add = vet[cont] + 0;
+
+            cont++;
+
             
-            printf ("%d", vet);
+            
+         
 
         }
+        printf ("%d", add);
 
         
 
+        return 0;
     }
