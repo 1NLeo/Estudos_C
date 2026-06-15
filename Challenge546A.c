@@ -2,32 +2,24 @@
 
     int main () {
 
-    int cost = 0, dol = 0, ban = 0, cont = 0, add = 0;
+    int cost = 0, dol = 0, ban = 0, total = 0, borrow = 0;
 
-    scanf ("%d", &ban);
-    ban++;
-    int vet[ban];
+    scanf ("%d", &cost);
 
     scanf ("%d", &dol);
 
-    scanf ("%d", &cost);
-    
-
+    scanf ("%d", &ban);
+    ban++; // Ban++ so when "i" = 1 i dont lose one banana
 
         for (int i = 1; i < ban; i++) {
 
-            vet[cont] = cost * i;
-
-            add = vet[cont] + 0;
-
-            cont++;
-
-            
-            
+           total += cost * i;
          
-
         }
-        printf ("%d", add);
+
+        borrow = total - dol;
+
+        printf ("%d", borrow);
 
         
 

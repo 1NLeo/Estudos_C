@@ -12,7 +12,7 @@ int main () {
     while (a <= b) {
 
            a *= 3;
-          b *= b * 2;
+          b *= 2;
 
             year++;
            
