@@ -1,27 +1,33 @@
-    #include <stdio.h>
+    #include <stdio.h> 
+    // k = cost of the first banana
+    // n = inicial number of dollars
+    // w = number of bananas he wants
 
     int main () {
 
-    int cost = 0, dol = 0, ban = 0, total = 0, borrow = 0;
+    int k = 0, n = 0, w = 0, total = 0, borrow = 0;
 
-    scanf ("%d", &cost);
+    scanf ("%d", &k);
 
-    scanf ("%d", &dol);
+    scanf ("%d", &n);
 
-    scanf ("%d", &ban);
-    ban++; // Ban++ so when "i" = 1 i dont lose one banana
+    scanf ("%d", &w);
+    w++; 
 
-        for (int i = 1; i < ban; i++) {
+        for (int i = 1; i < w; i++) {
 
-           total += cost * i;
+           total += k * i;
          
         }
 
-        borrow = total - dol;
+        borrow = total - n;
+
+        if (total < n) {
+            borrow = 0;
+        }
 
         printf ("%d", borrow);
 
-        
 
         return 0;
     }
