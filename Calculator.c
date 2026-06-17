@@ -53,20 +53,17 @@
             }
 
                 if (opt == 2) {
-
-                        printf ("How many numbers will you subtract: ");
-                        scanf ("%d", &nums);
                         
+                        printf ("Type the first number: ");
+                        scanf ("%f", &x);
 
-                        for (int i = 1; i <= nums; i++){
-                            
-                            printf("Type the %dº number: \n", i);
-                            scanf ("%f", &x);
+                        printf ("Type the second number: ");
+                        scanf ("%f", &y);
 
-                            opr = opr - x;
+                        opr = x - y;
 
-                        }                  //turn on     //turn off the color
-                            printf ("Result: " green "%.2f" reset "\n", opr);
+                                        //turn on     //turn off the color
+                        printf ("Result: " green "%.2f" reset "\n", opr);
                         
                 }
 
