@@ -29,20 +29,13 @@
                 printf ("%d", vet[div]);
             }
 
-
+            
             if ( quant % 2 == 0) {
 
-               
                 med = (vet[div] + vet[div - 1 ]) / 2.0 ;
 
                 printf ("%.1f", med);
             }
-
-
-
-
-        
-        
 
         return 0;
     }

@@ -9,10 +9,10 @@ int main() {
     char maior_aluno[50];
 
     printf("-------------------\n");
-    printf(" Escola do Leo \n");
+    printf(" Leo´s school \n");
     printf("-------------------\n");
 
-    printf("Quantidade de alunos na turma: ");
+    printf("Quantity of students in the classroom: ");
     scanf("%d", &turma);
 
     cont = 0;
