@@ -6,7 +6,7 @@
  #define reset   "\033[0m"
  #define green "\033[32m"
  #define cyan   "\033[36m"
-
+ #define red "\033[31m"
 
     int main () {
 
@@ -28,7 +28,7 @@
             printf ("|" green " [3]" reset " Multiplication  |  \n");
             printf ("|" green " [4]" reset " Division        |  \n");
             printf ("|" green " [5]" reset " Exponentiation  |  \n");
-           printf ("|" green " [6]" reset " Exit            |  \n");    
+            printf ("|" green " [6]" reset " Exit            |  \n");    
             printf ("=======================  \n");
 
             scanf ("%d", &opt);
@@ -49,7 +49,11 @@
 
                 }                  //turn on     //turn off the color
                     printf ("Result: " green "%.2f" reset "\n", opr);
-                
+                    
+                    opr = 0; x = 0; nums = 0;
+                    
+                    
+
             }
 
                 if (opt == 2) {
@@ -94,16 +98,29 @@
                             printf ("Type the 2nd number: \n");
                             scanf ("%f", &y);
 
-                            opr = x / y;
+                        }   if (y != 0) {
+                                
+                                
 
-                                         //turn on     //turn off the color
-                            printf ("Result: " green "%.2f" reset "\n", opr);
+                                            //turn on     //turn off the color
+                                printf ("Result: " green "%.2f" reset "\n", x / y);
+                        }   
                         
-                        }
+                            else if (y == 0) {
 
+                                    printf ( red "It is not possible to divide a number by 0\n" reset);
+                                    printf ("Type another number: ");
+                                    scanf ("%f", &y);
+
+                                    printf ("Result: " green "%.2f" reset "\n", x / y);
+                                    
+                
+
+                            }
+                     
                             if (opt == 5) {
                             
-                                double base, expo, result; // double to create a var to the exponentiation
+                                double base, expo, result; // double to create a bigger var to the exponentiation
 
                                 printf("Type the base number: \n");
                                 scanf ("%lf", &base);
@@ -111,7 +128,6 @@
                                 printf ("Type the exponent: \n");
                                 scanf ("%lf", &expo);
 
-                            
                                 result = pow(base, expo); // commands to make the exponentiation works
 
                                                 //turn on     //turn off the color
