@@ -87,6 +87,8 @@
 
                         }                  //turn on     //turn off the color
                             printf ("Result: " green "%.2f" reset "\n", opr);
+
+                            opr = 0; x = 0; nums = 0;
                         
                     }
 
@@ -98,23 +100,27 @@
                             printf ("Type the 2nd number: \n");
                             scanf ("%f", &y);
 
-                        }   if (y != 0) {
+                        }   if (opt == 4 && y != 0) {
                                 
                                 
 
                                             //turn on     //turn off the color
                                 printf ("Result: " green "%.2f" reset "\n", x / y);
+
+                                opr = 0; x = 0, y = 0;
                         }   
                         
-                            else if (y == 0) {
+                            else if (opt == 4 && y == 0) {
 
                                     printf ( red "It is not possible to divide a number by 0\n" reset);
                                     printf ("Type another number: ");
                                     scanf ("%f", &y);
 
-                                    printf ("Result: " green "%.2f" reset "\n", x / y);
+                                    printf ("%.1f / %.1f = " green "%.2f" reset "\n",x, y , x / y);
+
+                                    opr = 0; x = 0, y = 0;
                                     
-                
+                                
 
                             }
                      
@@ -132,6 +138,8 @@
 
                                                 //turn on     //turn off the color
                                 printf ("Result: " green "%.2lf" reset "\n",result );
+                                
+                                base = 0, expo = 0, result = 0;
                         
                         }
 
