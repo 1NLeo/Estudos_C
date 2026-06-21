@@ -8,6 +8,7 @@
  #define cyan   "\033[36m"
  #define red "\033[31m"
 
+
     int main () {
 
         setlocale(LC_ALL, ".UTF-8"); // Used to make this simbol works "º"
@@ -18,11 +19,12 @@
 
 
         while (opt != 6) {
+            
+
 
             printf("=======================\n");
             printf("|" cyan "     Calculator" reset     "      |\n" );
             printf("=======================\n");
-
             printf ("|" green " [1]" reset " Addition        |  \n");
             printf ("|" green " [2]" reset " Subtraction     |  \n");
             printf ("|" green " [3]" reset " Multiplication  |  \n");
@@ -145,10 +147,6 @@
 
            
         }
-
-
-       
-
 
         return 0;
     }
