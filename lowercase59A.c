@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <ctype.h>
 
+
+// Need to learn more to complete this challenge. Still to hard for me 6/22/2026
+
 int main () {
 
  char string[100];
