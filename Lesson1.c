@@ -2,6 +2,8 @@
 
 int main () {
 
+    // Format specifiers
+
     printf ("Hello World!\n");
 
     printf ("Integer number: %d \n", 10);
