@@ -8,14 +8,16 @@ int main (){
     scanf ("%f", &grade);
 
     if (grade >= 7){
-
         printf ("Approved!");
-
     }
 
-    else {
-        printf("Reproved ):");
-    }
+        else if (grade >= 4.0) { 
+            printf ("You can make the exam again.");
+        }
+    
+            else {
+                printf ("Reproved :(");
+            }
 
 
     return 0;
