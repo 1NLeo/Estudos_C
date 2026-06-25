@@ -14,7 +14,7 @@ int main (){
     }
 
     else {
-        printf("Failed ):");
+        printf("Reproved ):");
     }
 
 
