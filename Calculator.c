@@ -58,7 +58,7 @@
 
             }
 
-                if (opt == 2) {
+                else if (opt == 2) {
                         
                         printf ("Type the first number: ");
                         scanf ("%f", &x);
@@ -73,7 +73,7 @@
                         
                 }
 
-                    if (opt == 3) {
+                    else if (opt == 3) {
 
                         printf ("How many numbers will you multiply: ");
                         scanf ("%d", &nums);
@@ -94,7 +94,7 @@
                         
                     }
 
-                        if (opt == 4) {
+                        else if (opt == 4) {
                             
                             printf("Type the 1st number: \n");
                             scanf ("%f", &x);
@@ -102,31 +102,29 @@
                             printf ("Type the 2nd number: \n");
                             scanf ("%f", &y);
 
-                        }   if (opt == 4 && y != 0) {
-                                
-                                
-
+                          if (y != 0) {
                                             //turn on     //turn off the color
                                 printf ("Result: " green "%.2f" reset "\n", x / y);
 
                                 opr = 0; x = 0, y = 0;
                         }   
                         
-                            else if (opt == 4 && y == 0) {
+                            else {
 
+                                    while (y == 0) {
                                     printf ( red "It is not possible to divide a number by 0\n" reset);
                                     printf ("Type another number: ");
                                     scanf ("%f", &y);
 
-                                    printf ("%.1f / %.1f = " green "%.2f" reset "\n",x, y , x / y);
-
-                                    opr = 0; x = 0, y = 0;
-                                    
-                                
+                                }   
+                                 
+                                printf ("%.1f / %.1f = " green "%.2f" reset "\n",x, y , x / y);
+                                opr = 0; x = 0, y = 0;
 
                             }
+                        }
                      
-                            if (opt == 5) {
+                            else if (opt == 5) {
                             
                                 double base, expo, result; // double to create a bigger var to the exponentiation
 
@@ -145,8 +143,16 @@
                         
                         }
 
-           
+
+                                else if (opt == 6) {
+                                    printf("Exiting...\n");
+                            }
+            
+            else {
+                printf ("Type one of the numbers inside de calculator.\n");
+            }
         }
+
 
         return 0;
     }
