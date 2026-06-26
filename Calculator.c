@@ -89,6 +89,10 @@
                             opr = 1;
                             }
 
+                             if (i == nums - 1 && x == 0 || i == nums && x == 0) {
+                                opr = 0;
+                            }
+
                         }                  //turn on     //turn off the color
                             printf ("Result: " green "%.2f" reset "\n", opr);
 
@@ -126,7 +130,7 @@
                             }
                 break;
 
-                case 5:
+                case 5:{
 
                                 double base, expo, result; // double to create a bigger var to the exponentiation
 
@@ -143,6 +147,7 @@
                                 
                                 base = 0, expo = 0, result = 0;
                 break;
+                }
 
                 case 6:
                 printf( red "Exiting...\n" reset);
