@@ -18,7 +18,7 @@
         
 
 
-        while (opt != 6) {
+        do {
             
 
 
@@ -154,7 +154,7 @@
                               
             
                         
-        }               
+        } while (opt != 6);               
 
 
         return 0;
