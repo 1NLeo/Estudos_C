@@ -14,7 +14,7 @@
         setlocale(LC_ALL, ".UTF-8"); // Used to make this simbol works "º"
 
         int opt = 0, nums = 0;
-        float x = 0, y = 0, opr = 0; // opt means "Option" | opr means "Operation"
+        float x = 0.0, y = 0.0, opr = 0; // opt means "Option" | opr means "Operation"
         
 
 
@@ -52,7 +52,7 @@
                 }                  //turn on     //turn off the color
                     printf ("Result: " green "%.2f" reset "\n", opr);
                     
-                    opr = 0; x = 0.0; nums = 0;
+                    opr = 0, x = 0.0; nums = 0;
 
                 break;
 
@@ -68,7 +68,7 @@
 
                                         //turn on     //turn off the color
                         printf ("Result: " green "%.2f" reset "\n", opr);
-                        opr = 0; x = 0.0; y = 0.0;
+                        opr = 0, x = 0.0; y = 0.0;
                     break;
 
                 case 3:
@@ -85,10 +85,14 @@
 
                             opr = x * opr;
 
+                            if (x == 0) {
+                            opr = 1;
+                            }
+
                         }                  //turn on     //turn off the color
                             printf ("Result: " green "%.2f" reset "\n", opr);
 
-                            opr = 0; x = 0; nums = 0;
+                            opr = 0, x = 0.0; nums = 0;
 
                 break;
 
@@ -104,7 +108,7 @@
                                                 //turn on     //turn off the color
                                     printf ("Result: " green "%.2f" reset "\n", x / y);
 
-                                    opr = 0; x = 0, y = 0;
+                                    opr = 0, x = 0.0, y = 0.0;
                             }   
                         
                                 else {
@@ -117,7 +121,7 @@
                                     }   
                                  
                                         printf ("%.1f / %.1f = " green "%.2f" reset "\n",x, y , x / y);
-                                        opr = 0; x = 0, y = 0;
+                                        opr = 0, x = 0.0, y = 0;
 
                             }
                 break;
@@ -143,13 +147,14 @@
                 case 6:
                 printf( red "Exiting...\n" reset);
                 break;
-                        
-                }
-                        
-                if (opt > 6 || opt < 1) {
 
-                    printf (red "ERROR:" reset "Type one of the numbers inside the calculator.\n");
+                default:
+                printf (red "ERROR:" reset "Type one of the numbers inside the calculator.\n");
+                break;
+                        
                 }
+                        
+              
 
                               
             
