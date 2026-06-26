@@ -35,8 +35,8 @@
 
             scanf ("%d", &opt);
 
-
-            if (opt == 1) {
+            switch (opt) {
+                case 1: 
 
                 printf ("How many numbers will you add: ");
                 scanf ("%d", &nums);
@@ -52,14 +52,12 @@
                 }                  //turn on     //turn off the color
                     printf ("Result: " green "%.2f" reset "\n", opr);
                     
-                    opr = 0; x = 0; nums = 0;
-                    
-                    
+                    opr = 0; x = 0.0; nums = 0;
 
-            }
+                break;
 
-                else if (opt == 2) {
-                        
+                case 2:
+        
                         printf ("Type the first number: ");
                         scanf ("%f", &x);
 
@@ -70,10 +68,10 @@
 
                                         //turn on     //turn off the color
                         printf ("Result: " green "%.2f" reset "\n", opr);
-                        
-                }
+                        opr = 0; x = 0.0; y = 0.0;
+                    break;
 
-                    else if (opt == 3) {
+                case 3:
 
                         printf ("How many numbers will you multiply: ");
                         scanf ("%d", &nums);
@@ -91,41 +89,41 @@
                             printf ("Result: " green "%.2f" reset "\n", opr);
 
                             opr = 0; x = 0; nums = 0;
-                        
-                    }
 
-                        else if (opt == 4) {
-                            
+                break;
+
+                case 4:
+
                             printf("Type the 1st number: \n");
                             scanf ("%f", &x);
 
                             printf ("Type the 2nd number: \n");
                             scanf ("%f", &y);
 
-                          if (y != 0) {
-                                            //turn on     //turn off the color
-                                printf ("Result: " green "%.2f" reset "\n", x / y);
+                            if (y != 0) {
+                                                //turn on     //turn off the color
+                                    printf ("Result: " green "%.2f" reset "\n", x / y);
 
-                                opr = 0; x = 0, y = 0;
-                        }   
+                                    opr = 0; x = 0, y = 0;
+                            }   
                         
-                            else {
+                                else {
 
-                                    while (y == 0) {
-                                    printf ( red "It is not possible to divide a number by 0\n" reset);
-                                    printf ("Type another number: ");
-                                    scanf ("%f", &y);
+                                        while (y == 0) {
+                                        printf ( red "It is not possible to divide a number by 0\n" reset);
+                                        printf ("Type another number: ");
+                                        scanf ("%f", &y);
 
-                                }   
+                                    }   
                                  
-                                printf ("%.1f / %.1f = " green "%.2f" reset "\n",x, y , x / y);
-                                opr = 0; x = 0, y = 0;
+                                        printf ("%.1f / %.1f = " green "%.2f" reset "\n",x, y , x / y);
+                                        opr = 0; x = 0, y = 0;
 
                             }
-                        }
-                     
-                            else if (opt == 5) {
-                            
+                break;
+
+                case 5:
+
                                 double base, expo, result; // double to create a bigger var to the exponentiation
 
                                 printf("Type the base number: \n");
@@ -140,18 +138,23 @@
                                 printf ("Result: " green "%.2lf" reset "\n",result );
                                 
                                 base = 0, expo = 0, result = 0;
+                break;
+
+                case 6:
+                printf( red "Exiting...\n" reset);
+                break;
                         
-                        }
+                }
+                        
+                if (opt > 6 || opt < 1) {
 
+                    printf (red "ERROR:" reset "Type one of the numbers inside the calculator.\n");
+                }
 
-                                else if (opt == 6) {
-                                    printf("Exiting...\n");
-                            }
+                              
             
-            else {
-                printf ("Type one of the numbers inside de calculator.\n");
-            }
-        }
+                        
+        }               
 
 
         return 0;
