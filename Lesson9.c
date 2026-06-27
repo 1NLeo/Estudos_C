@@ -7,11 +7,18 @@ int main (){
 
         for (int i =0; i < 5; i++) {
 
-            s = v[i] + s;
+            printf ("Type a number:");
+            scanf ("%d", &v[i]);
 
         }
 
-        printf ("%d", s/5);
+            printf ("Entered data: \n");
 
+            for (int i = 0; i < 5; i++) {
+
+                printf ("%d \t", v[i]);
+            }
+
+          
     return 0;
 }
