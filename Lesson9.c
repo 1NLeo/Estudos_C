@@ -18,5 +18,6 @@ int main (){
                 printf ("%d \t", v[i]);
             }
     
+            
     return 0;
 }
