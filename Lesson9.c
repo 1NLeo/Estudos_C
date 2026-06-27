@@ -9,7 +9,6 @@ int main (){
 
             printf ("Type a number:");
             scanf ("%d", &v[i]);
-
         }
 
             printf ("Entered data: \n");
@@ -18,7 +17,6 @@ int main (){
 
                 printf ("%d \t", v[i]);
             }
-
-          
+    
     return 0;
 }
