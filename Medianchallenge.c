@@ -30,7 +30,7 @@
             }
 
             
-            if ( quant % 2 == 0) {
+            else if ( quant % 2 == 0) {
 
                 med = (vet[div] + vet[div - 1 ]) / 2.0 ;
 
