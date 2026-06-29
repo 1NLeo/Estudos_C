@@ -9,13 +9,13 @@
         int quant = 0, n = 0, div;
         float med;
 
-        printf ("Type the quantity of numbers you will type: ");
+        printf ("Enter the quantity of numbers you will type: ");
         scanf ("%d", &quant);
         int vet[quant];
 
         for (int i = 0; i < quant; i++) {
 
-            printf ("Type each number in ascending order: ");
+            printf ("Enter each number in ascending order: ");
             scanf ("%d", &n);
 
             vet[i] = n;
