@@ -4,7 +4,7 @@ int main () {
 
     float sal = 0, newsal = 0, inc = 0, per;
 
-    printf ("Type the salary: ");
+    printf ("Enter the salary: ");
     scanf ("%f", &sal );
 
     printf ("Percentage increase: ");
