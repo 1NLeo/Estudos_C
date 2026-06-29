@@ -2,39 +2,39 @@
 #include <string.h>
 
 int main() {
-    int turma, cont;
-    float nota, maior_nota;
+    int class, count;
+    float grade, best_grade;
     
-    char aluno[50];
-    char maior_aluno[50];
+    char student[50];
+    char best_student[50];
 
     printf("-------------------\n");
     printf(" Leo´s school \n");
     printf("-------------------\n");
 
     printf("Quantity of students in the classroom: ");
-    scanf("%d", &turma);
+    scanf("%d", &class);
 
-    cont = 0;
-    maior_nota = 0.0; 
+    count = 0;
+    best_grade = 0.0; 
 
-    while (cont < turma) {
-        cont++;
-        printf("Aluno %dc", cont);
+    while (count < class) {
+        count++;
+        printf("Student %d: ", count);
         
-        printf("Nome do aluno: ");
-        scanf ("%s", &aluno);
+        printf("Student name: ");
+        scanf ("%s", &student);
 
-        printf("Nota do aluno: ");
-        scanf("%f", &nota);
+        printf("Student grade: ");
+        scanf("%f", &grade);
 
-        if (nota > maior_nota) {
-            maior_nota = nota;
-            strcpy(maior_aluno, aluno);
+        if (grade > best_grade) {
+            best_grade = grade;
+            strcpy(best_student, student);
         }
     }
 
-    printf( "%s foi o melhor aluno, e sua nota foi: %f.:2f\n", maior_aluno, maior_nota );
+    printf( "%s was the best student and its grade was: %.2f\n", best_student, best_grade );
 
     return 0;
 
