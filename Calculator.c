@@ -80,7 +80,7 @@
 
                         for (int i = 1; i <= nums; i++){
                             
-                            printf("Type the %dº number: \n", i);
+                            printf("Enter the %dº number: \n", i);
                             scanf ("%f", &x);
 
                             opr = x * opr;
@@ -102,10 +102,10 @@
 
                 case 4:
 
-                            printf("Type the 1st number: \n");
+                            printf("Enter the 1st number: \n");
                             scanf ("%f", &x);
 
-                            printf ("Type the 2nd number: \n");
+                            printf ("Enter the 2nd number: \n");
                             scanf ("%f", &y);
 
                             if (y != 0) {
@@ -119,7 +119,7 @@
 
                                         while (y == 0) {
                                         printf ( red "It is not possible to divide a number by 0\n" reset);
-                                        printf ("Type another number: ");
+                                        printf ("Enter another number: ");
                                         scanf ("%f", &y);
 
                                     }   
@@ -134,10 +134,10 @@
 
                                 double base, expo, result; // double to create a bigger var to the exponentiation
 
-                                printf("Type the base number: \n");
+                                printf("Enter the base number: \n");
                                 scanf ("%lf", &base);
 
-                                printf ("Type the exponent: \n");
+                                printf ("Enter the exponent: \n");
                                 scanf ("%lf", &expo);
 
                                 result = pow(base, expo); // commands to make the exponentiation works
@@ -154,7 +154,7 @@
                 break;
 
                 default:
-                printf (red "ERROR:" reset "Type one of the numbers inside the calculator.\n");
+                printf (red "ERROR:" reset "Enter one of the numbers inside the calculator.\n");
                 break;
                         
                 }
