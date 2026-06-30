@@ -5,10 +5,10 @@ int main () {
 
       int x = 0, y = 0, add = 0, sub = 0, div = 0, mult = 0;
       
-      printf ("Type a nnumber: ");
+      printf ("Enter a nnumber: ");
       scanf ("%d", &x);
 
-      printf ("Type another number:  ");
+      printf ("Enter another number:  ");
       scanf ("%d", &y);
 
       add = x + y;
