@@ -4,7 +4,7 @@ int main (){
 
     int d = 0;
 
-    printf ("Type a number from 1 to 7: ");
+    printf ("Enter a number from 1 to 7: ");
     scanf ("%d", &d);
 
     switch (d){
