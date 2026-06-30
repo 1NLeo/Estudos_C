@@ -2,7 +2,7 @@
 
 int main (){
 
-    char s[50];
+    char s[16];
 
     printf ("Enter something (Convencional Scanf): ");
     scanf ("%s", s);
@@ -11,7 +11,7 @@ int main (){
     printf ("%s\n\n", s);
 
     printf ("Enter something (Enhanced Scanf): ");
-    scanf(" %49[^\n]", s);
+    scanf(" %15[^\n]s", s);
 
     printf ("%s\n", s);
     
