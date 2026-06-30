@@ -2,9 +2,10 @@
 #include <string.h>
 #include <locale.h>
 
+#define n 50
 int main (){
 
-    char s [50];
+    char s [n];
     int size;
     
     printf ("Enter a text: ");
@@ -13,13 +14,15 @@ int main (){
     size = strlen(s) - 1;
     printf ("Size of the text: %d\n", size);
 
-    printf ("Position print: \n");
+    printf ("Last letter:");
 
     for (int i = size - 1; i < strlen(s); i++){ // Only prints the last letter
 
         printf ("%c", s[i]);
 
     }
+
+    puts (s);
 
 
 
