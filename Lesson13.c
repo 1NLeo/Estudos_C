@@ -19,7 +19,7 @@ int main (){
 
     strcat(s1,s2); // concatenate (puts together) two strings.
 
-    printf (s1);
+    puts (s1);
 
     return 0;
 }
