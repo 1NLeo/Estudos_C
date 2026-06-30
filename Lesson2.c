@@ -10,13 +10,13 @@ int main () {
     float height = 0.0;
     char name[50] = "";
 
-        printf ("Type your age: ");
+        printf ("Enter your age: ");
         scanf ("%d", &age);
 
-        printf ("Type your height: ");
+        printf ("Enter your height: ");
         scanf ("%f", &height);
 
-        printf ("Type your name: ");
+        printf ("Enter your name: ");
         scanf ("%s", &name);
 
             printf ("Given datas: \n");
