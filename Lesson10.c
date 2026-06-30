@@ -6,13 +6,14 @@ int main (){
 
     printf ("Enter something (Convencional Scanf): ");
     scanf ("%s", s);
-    
+    fflush(stdin);
 
     printf ("%s\n\n", s);
 
     printf ("Enter something (Enhanced Scanf): ");
     scanf(" %15[^\n]s", s);
-
+    fflush(stdin);
+    
     printf ("%s\n", s);
     
 
