@@ -16,7 +16,7 @@ int main (){
 
         }
 
-        printf ("Printing the etire matrice: \n");
+        printf ("Printing the etire bidimensional array: \n");
 
         for (m = 0; m < 3; m++) {
             
