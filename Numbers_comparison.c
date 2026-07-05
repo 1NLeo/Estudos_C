@@ -11,10 +11,10 @@ int main () {
     scanf ("%f", &y);
 
     if (x > y) {
-        printf ("%.2f, is bigger than %.2f", x, y);
+        printf ("%.2f is bigger than %.2f", x, y);
     }
 
-    else if (y >x) {
+    else {
         printf("%.2f is bigger than %.2f", y, x);
     }
 
