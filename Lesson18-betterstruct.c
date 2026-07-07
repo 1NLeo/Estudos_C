@@ -21,14 +21,14 @@ int main  (){
 
         printf ("Enter your name: ");
         fgets(array[i].name, 49, stdin); // this different scanf is used to read spaces
-        array[i].name[strcspn(array[i].name, "\n")] = '\0';
+        array[i].name[strcspn(array[i].name, "\n")] = '\0'; // overwrites the \n with the `\0` "null"
 
         printf("Enter your age: ");
         scanf ("%d", &array[i].age);
 
         printf("Enter your weight: ");
         scanf("%f", &array[i].weight);
-        while (getchar() != '\n');
+        while (getchar() != '\n'); // reads character one by one until finds the \n so it doesnt brake the program
     }
 
         for (int i = 0; i < size; i++){
