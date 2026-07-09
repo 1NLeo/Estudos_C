@@ -40,7 +40,7 @@ int main () {
 
         if (best_grade < student[i].grade){
             best_grade = student[i].grade;
-            strcpy (best_student, student[i].name );
+            strcpy (best_student, student[i].name ); //strcpy(dest, src) — the first argument is the destination, second is the source.
         }
     }
 
