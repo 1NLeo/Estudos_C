@@ -9,11 +9,11 @@ void calculatesquare () {
     int square = number * number;
     printf ("Square of %d is %d \n", number, square);
 }
+
+
 int main () {
 
-    
     calculatesquare();
-
 
     return 0;
 }
