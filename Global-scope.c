@@ -1,6 +1,7 @@
 #include <stdio.h>
 // Global Scope. Better to use than the local scope.
-int result;
+
+int result; // Result is the global scope
 
 void addnumbers(int number1, int number2){
     result = number1 + number2;
