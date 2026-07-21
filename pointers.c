@@ -25,7 +25,7 @@ int main () {
     // ptr = number; Invalid (ptr is a pointer that can oly store memory adress, but number is not a memory adress)
     // *ptr = &number; Invalid (ptr gives the value stored in the ptr location, however &number gives the memory adress)
     // ptr = &number; Valid (both ptr and &number represents the memory address)
-    // *ptr = number; Valid (both ptr and &number represents the value stored in the memory location)
+    // *ptr = number; Valid (both ptr and number represents the value stored in the memory location)
     
     // }
     return 0;
