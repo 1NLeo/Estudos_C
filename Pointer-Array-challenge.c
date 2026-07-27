@@ -6,18 +6,18 @@
  *
  * - Assign the first element of the array to a
  *   largest variable using pointer
- *       int largest = *arr
+ *       
  *
  * - Run a for loop to access each element of the
  *   array.
  *
  * - Compare largest with each array element
  *   using pointer
- *       largest < *(arr + i)
+ *      
  *
  * - If the largest variable is smaller than an
  *   element, assign the array value to largest
- *       largest = *(arr + i)
+ *     
  */
 
 #include <stdio.h>
