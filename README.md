@@ -13,6 +13,8 @@ This repository is where I keep track of everything I study and practice in **C*
 
 I'm working toward applying to the **Apple Developer Academy**, and consistent practice with C is a key part of that journey. Every problem solved here is a step closer to that goal. 🚀
 
+Hope next semester i become an expert on **C**
+
 ---
 
 *Feedback and suggestions are always welcome!*
