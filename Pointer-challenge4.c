@@ -21,6 +21,6 @@ int main () {
 
     printf ("Result: %d", result);
 
-
+    
     return 0;
 }
