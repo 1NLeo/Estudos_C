@@ -1,5 +1,5 @@
-//Escreva uma função int soma_vetor(int *v, int tamanho) 
-//que soma os elementos de um vetor de inteiros usando aritmética de ponteiros (sem usar v[i], só *(v+i)).
+//Write a function int soma_vetor(int *v, int tamanho)
+//that sums the elements of an integer array using pointer arithmetic (without using v[i], only *(v+i)).
 #include <stdio.h>
 
 int sum_array(int *v) {
@@ -21,6 +21,6 @@ int main () {
 
     printf ("Result: %d", result);
 
-    
+
     return 0;
 }
