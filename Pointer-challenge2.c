@@ -1,6 +1,6 @@
 // Challenge:
-// Declare um int x = 10;, um ponteiro pra ele, 
-// e imprima o valor de x de três formas diferentes: direto, via *ponteiro, e o endereço via %p.
+// Declare an int x = 10;, a pointer to it,
+// and print the value of x in three different ways: directly, via the *pointer, and the address via %p.
 
 #include <stdio.h>
 
