@@ -1,10 +1,12 @@
 /*
-Exercício 4 — Ponteiro modificando um float
+Exercise 4 — Pointer modifying a float
 
-Declare uma variável float preco = 9.99; e um ponteiro float *p apontando pra ela. Usando o ponteiro (ou seja, *p = ...),
-mude o valor de preco para 15.50. Depois imprima preco (a variável original, não o ponteiro) pra confirmar que o valor mudou.
+Declare a float variable `preco = 9.99;` and a pointer `float *p` pointing to it. Using the pointer (i.e., `*p = ...`),
+change the value of `preco` to 15.50. Then print `preco` (the original variable, not the pointer) 
+to confirm that the value has changed.
 
-Objetivo: praticar que alterar *p altera a variável original, mesmo sem mexer em preco diretamente no código.
+Objective: to practice the concept that modifying `*p` changes the original variable, 
+even without directly manipulating `preco` in the code.
 */
 
 #include <stdio.h>
