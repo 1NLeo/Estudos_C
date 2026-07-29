@@ -1,3 +1,7 @@
+// Challenge:
+// Declare um int x = 10;, um ponteiro pra ele, 
+// e imprima o valor de x de três formas diferentes: direto, via *ponteiro, e o endereço via %p.
+
 #include <stdio.h>
 
 int main () {
