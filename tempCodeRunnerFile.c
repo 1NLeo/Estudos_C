@@ -1,60 +1,31 @@
 #include <stdio.h>
 
-int main  () {
-    
-    int a = 0,  b = 0, c = 0, t = 0;
+int main () {
 
-    scanf ("%d", &t);
+    int a, b, c;
 
-    for (int i = 0; i < t; i++) {
-    int rounds = 0;
-        scanf ("%d", &a);
-        scanf ("%d", &b);
-        scanf ("%d", &c);
+    scanf ("%d", &a);
+    scanf ("%d", &b);        
+    scanf ("%d", &c);  
 
-        while (a != b || a != c || b != c) {
-            if ( a == b || a == c || b == c) {
-                break;
-            }
-            if (a > b && a > c) {
-                if (b < c) {
-                    a = a - 1;
-                    b = b + 1;
-                    rounds++;
-                }
-                else {
-                    a = a - 1;
-                    c = c - 1;
-                    rounds++;
-                }
-            }
+   int results[6] = {
+        a + b + c,
+        a * b * c,
+        (a + b) * c,
+        a * (b + c),
+        a + (b * c),
+        (a * b) + c
+    };
 
-             else if (b > a && b > c) {
-                if (a < c) {
-                    b = b - 1;
-                    a = a + 1;
-                    rounds++;
-                }
-                else {
-                    b = b - 1;
-                    c = c - 1;
-                    rounds++;
-                }
-            }
+    int max[0];
 
-             else {
-                if (b < a) {
-                    c = c - 1;
-                    b = b + 1;
-                    rounds++;
-                }
-                else {
-                    c = c - 1;
-                    a = a - 1;
-                    rounds++;
-                }
-            }
+    for (int i = 0; i < 6; i++) {
+        if (results[i] > max[0]) {
+            max[0] = results[i];
         }
-        printf ("%d\n", rounds);
     }
+
+    printf ("%d", max[0]);
+
+    return 0;
 }
