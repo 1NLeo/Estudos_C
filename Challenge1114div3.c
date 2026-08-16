@@ -12,48 +12,41 @@ int main  () {
         scanf ("%d", &b);
         scanf ("%d", &c);
 
-        while (a != b || a != c || b != c) {
-            if ( a == b || a == c || b == c) {
-                break;
-            }
+        while (a != b && a != c && b != c) {
+           
             if (a > b && a > c) {
                 if (b < c) {
-                    a = a - 1;
-                    b = b + 1;
-                    rounds++;
+                    a--;
+                    b++;
                 }
                 else {
-                    a = a - 1;
-                    c = c - 1;
-                    rounds++;
+                    a--;
+                    c++;
                 }
             }
 
              else if (b > a && b > c) {
                 if (a < c) {
-                    b = b - 1;
-                    a = a + 1;
-                    rounds++;
+                    b--;
+                    a++;
                 }
                 else {
-                    b = b - 1;
-                    c = c - 1;
-                    rounds++;
+                    b--;
+                    c++;
                 }
             }
 
              else {
                 if (b < a) {
-                    c = c - 1;
-                    b = b + 1;
-                    rounds++;
+                    c--;
+                    b++;
                 }
                 else {
-                    c = c - 1;
-                    a = a - 1;
-                    rounds++;
+                    c--;
+                    a++;
                 }
             }
+                rounds++;
         }
         printf ("%d\n", rounds);
     }
