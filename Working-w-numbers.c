@@ -101,8 +101,7 @@ int main () {
 
     find_number (array, size, num); // void
 
+    // A few changes in the code just to test the "git switch -c "
     
-
-
     return 0;
 }
