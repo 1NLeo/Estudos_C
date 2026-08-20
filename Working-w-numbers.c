@@ -102,6 +102,6 @@ int main () {
     find_number (array, size, num); // void
 
     // A few changes in the code just to test the "git switch -c "
-    
+    // The commits dont go to the main, very useful
     return 0;
 }
