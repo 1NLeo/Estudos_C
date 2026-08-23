@@ -2,41 +2,44 @@
 
 int main  () {
 
-    int idade = 0;
+    int age = 0;
     int opt = 0;
-    int cnh = 0;
+    int drv_license = 0;
 
-        printf ("Digite sua idade: ");
-        scanf ("%d", &idade);
-        
-    do {
+    printf ("Whats your age: ");
+    scanf ("%d", &age);
 
-        printf ("Possui CNH: [1] SIM");
-        printf ("            [2] NAO: ");
-        scanf ("%d", &cnh);
-
-    } while (cnh != 2 && cnh != 1);
- 
-        if (idade >= 18 && cnh == 1) {
-
-            if (cnh == 1) {
-
-                printf ("Voce possui alguma infracao de grave: [1] SIM");
-                printf ("                                      [2] NAO");
-                scanf ("%d", &opt);
-
-                if (opt == 1) {
-                    printf ("Voce pode dirigir");
-                }
-
-                else {
-                    printf ("Voce nao pode dirigir");
-                }
-            }
+        if (age < 18) {
+        printf ("You cannot drive the company vehicle.");
         }
 
         else {
-            printf ("Voce nao pode dirigir o veiculo da empresa.");
+            do {
+
+            printf ("Do you have a drivers license: [1] YES \n");
+            printf ("                               [2] NO: ");
+            scanf ("%d", &drv_license);
+
+            } while (drv_license != 2 && drv_license != 1);
+
+                if (drv_license == 1) {
+
+                    printf ("Do you have any infraction:[1] YES\n");
+                    printf ("                           [2] NO: ");
+                    scanf ("%d", &opt);
+
+                    if (opt == 2) {
+                        printf ("You can drive the company vehicle");
+                    }
+
+                    else {
+                        printf ("You cannot drive the company vehicle.");
+                    }
+                }
+
+            else {
+                printf ("You cannot drive the company vehicle.");
+            }
         }
 
     return 0;
