@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void atualizarvoluntario (int *total, int novos) {
+void atualizarvoluntario (int* total, int novos) {
 
     *total = *total + novos;
     novos = 0;
