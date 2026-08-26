@@ -13,8 +13,6 @@ void fib (float first_num ,float second_num) {
         }
         printf ("%.0lf \t", last_num);
 
-
-
         first_num = second_num;
         second_num = last_num;
     }
