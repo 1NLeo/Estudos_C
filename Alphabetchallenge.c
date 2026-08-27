@@ -13,10 +13,6 @@
 
         for (int i = 1; i <= cont; i++) {
             printf ("%c", alphabet[i]);
-
-
-
-            
         }
 
     return 0;
