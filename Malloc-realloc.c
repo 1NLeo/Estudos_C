@@ -51,7 +51,7 @@ int main(void) {
 
     // free: devolve a memória alocada ao sistema
     free(notas);
-    notas = NULL; // boa prática: evita "dangling pointer"
+    notas = NULL; // boa prática: evita "dangling pointer (ponteiro que aponta para um endereço que ja foi liberado)"
 
     return 0;
 }
