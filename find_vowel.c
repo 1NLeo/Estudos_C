@@ -22,6 +22,8 @@ int main () {
     }
 
     printf ("%d", vowel_quantity);
+    
+    
 
     return 0;
 }
