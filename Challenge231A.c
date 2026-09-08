@@ -14,16 +14,12 @@
 // Output
 // Print a single integer — the number of problems the friends will implement on the contest.
 
-int main ()
-{
+int main () {
 
     int problems, willdo, petya, vasya, tonya;
-    
   
     willdo = 0;
     problems = 0;
-
-
 
     scanf ("%d", &problems);
 
@@ -39,11 +35,8 @@ int main ()
         if ((petya + vasya+ tonya) >= 2 ) {
             willdo++;
 
-        }
-
-        
-
+        } 
     }
-         printf ("%d", willdo);
+        printf ("%d", willdo);
 }
    
